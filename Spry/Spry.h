@@ -2,7 +2,7 @@
 //  Spry-macOS.h
 //  Spry-macOS
 //
-//  Created by Shahpour Benkau on 22/02/2017.
+//  Created by Shaps Benkau on 22/02/2017.
 //
 //
 

@@ -2,32 +2,15 @@
 //  EqualTests.swift
 //  Spry
 //
-//  Created by Shahpour Benkau on 22/02/2017.
+//  Created by Shaps Benkau on 22/02/2017.
 //
 //
 
 import XCTest
 import Spry
 
-class EqualTests: XCTestCase, XCTestCaseProvider {
+final class EqualTests: XCTestCase {
     
-    var allTests: [(String, () throws -> Void)] {
-        return [
-            ("testEquality", testEquality),
-            ("testArrayEquality", testArrayEquality),
-            ("testSetEquality", testSetEquality),
-            ("testDictionaryEquality", testDictionaryEquality),
-            ("testDataEquality", testDataEquality),
-            ("testNSObjectEquality", testNSObjectEquality),
-            ("testOperatorEquality", testOperatorEquality),
-            ("testOperatorEqualityWithArrays", testOperatorEqualityWithArrays),
-            ("testOperatorEqualityWithDictionaries", testOperatorEqualityWithDictionaries),
-            ("testOptionalEquality", testOptionalEquality),
-            ("testArrayOfOptionalsEquality", testArrayOfOptionalsEquality),
-            ("testDictionariesWithDifferentSequences", testDictionariesWithDifferentSequences),
-        ]
-    }
-
     func testEquality() {
         XCTAssert(expect(1 as CInt).to(equal(1 as CInt)))
         XCTAssert(expect(1 as CInt).to(equal(1)))
