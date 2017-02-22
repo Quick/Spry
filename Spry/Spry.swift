@@ -1,3 +1,11 @@
+//
+//  EqualTests.swift
+//  Spry
+//
+//  Created by Shahpour Benkau on 22/02/2017.
+//
+//
+
 import Foundation
 
 public func expect<T>(_ expression: @autoclosure @escaping () throws -> T?) -> Expectation<T> {

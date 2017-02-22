@@ -1,23 +1,26 @@
+//
+//  EqualTests.swift
+//  Spry
+//
+//  Created by Shahpour Benkau on 22/02/2017.
+//
+//
+
 import Foundation
 
-public protocol Matcher {
-    associatedtype ValueType
-    func matches(_ expression: Expression<ValueType>) throws -> Bool
-    func doesNotMatch(_ expression: Expression<ValueType>) throws -> Bool
+private enum MatchResult {
+    case success
+    case failure
 }
 
-public struct MatcherFunc<T>: Matcher {
+public struct Matcher<T> {
     public let matcher: (Expression<T>) throws -> Bool
     
     init(_ matcher: @escaping (Expression<T>) throws -> Bool) {
         self.matcher = matcher
     }
     
-    public func matches(_ expression: Expression<T>) throws -> Bool {
+    public func evaluate(_ expression: Expression<T>) throws -> Bool {
         return try matcher(expression)
-    }
-    
-    public func doesNotMatch(_ expression: Expression<T>) throws -> Bool {
-        return try !matcher(expression)
     }
 }

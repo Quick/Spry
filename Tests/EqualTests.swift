@@ -7,12 +7,18 @@
 //
 
 import XCTest
-import Spry
+@testable import Spry
 
 class EqualTests: XCTestCase {
 
-    func testExample() {
-        
+    func testPositive() {
+        let result = expect("Shaps").to(equal("Shaps"))
+        XCTAssertEqual(result, true)
+    }
+    
+    func testNegative() {
+        let result = expect("Shaps").toNot(equal("Mohsenin"))
+        XCTAssertEqual(result, true)
     }
 
 }

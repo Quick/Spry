@@ -1,9 +1,17 @@
+//
+//  EqualTests.swift
+//  Spry
+//
+//  Created by Shahpour Benkau on 22/02/2017.
+//
+//
+
 import Foundation
 
 public struct Expression<T> {
     let expression: () throws -> T?
     
-    public func evaluate() throws -> T? {
+    func evaluate() throws -> T? {
         return try self.expression()
     }
 }
