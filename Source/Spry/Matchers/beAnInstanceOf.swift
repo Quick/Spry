@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// A Nimble matcher that succeeds when the actual value is an _exact_ instance of the given class.
 public func beAnInstanceOf<T>(_ expectedType: T.Type) -> Matcher<Any> {
     return Matcher { expression in
         let instance = try expression.evaluate()
@@ -24,6 +25,8 @@ public func beAnInstanceOf<T>(_ expectedType: T.Type) -> Matcher<Any> {
     }
 }
 
+/// A Nimble matcher that succeeds when the actual value is an instance of the given class.
+/// @see beAKindOf if you want to match against subclasses
 public func beAnInstanceOf(_ expectedClass: AnyClass) -> Matcher<NSObject> {
     return Matcher { expression in
         let instance = try expression.evaluate()

@@ -11,6 +11,8 @@ public func beLessThanOrEqualTo<T: Comparable>(_ expectedValue: T?) -> Matcher<T
     }
 }
 
+/// A Nimble matcher that succeeds when the actual value is less than
+/// or equal to the expected value.
 @discardableResult
 public func <=<T: Comparable>(lhs: Expectation<T>, rhs: T) -> Bool {
     return lhs.to(beLessThanOrEqualTo(rhs))

@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// A Nimble matcher that succeeds when the actual value is an instance of the given class.
 public func beAKindOf<T>(_ expectedType: T.Type) -> Matcher<Any> {
     return Matcher { expression in
         let instance = try expression.evaluate()

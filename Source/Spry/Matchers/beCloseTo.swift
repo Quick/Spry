@@ -10,10 +10,14 @@ import Foundation
 
 let DefaultDelta = 0.0001
 
-func isCloseTo(_ actualValue: Double, expectedValue: Double, delta: Double = DefaultDelta) -> Bool {
+private func isCloseTo(_ actualValue: Double, expectedValue: Double, delta: Double = DefaultDelta) -> Bool {
     return abs(actualValue - expectedValue) < delta
 }
 
+/// A Nimble matcher that succeeds when a value is close to another. This is used for floating
+/// point values which can have imprecise results when doing arithmetic on them.
+///
+/// @see equal
 public func beCloseTo(_ expectedValue: Double, within delta: Double = DefaultDelta) -> Matcher<Double> {
     return Matcher { expression in
         guard let actualValue = try expression.evaluate() else { return false }
@@ -21,6 +25,10 @@ public func beCloseTo(_ expectedValue: Double, within delta: Double = DefaultDel
     }
 }
 
+/// A Nimble matcher that succeeds when a value is close to another. This is used for floating
+/// point values which can have imprecise results when doing arithmetic on them.
+///
+/// @see equal
 public func beCloseTo(_ expectedValues: [Double], within delta: Double = DefaultDelta) -> Matcher <[Double]> {
     return Matcher { expression in
         if let actual = try expression.evaluate() {
@@ -43,21 +51,37 @@ public func beCloseTo(_ expectedValues: [Double], within delta: Double = Default
 
 infix operator ≈ : ComparisonPrecedence
 
+/// A Nimble matcher that succeeds when a value is close to another. This is used for floating
+/// point values which can have imprecise results when doing arithmetic on them.
+///
+/// @see equal
 @discardableResult
 public func ≈(lhs: Expectation<[Double]>, rhs: [Double]) -> Bool {
     return lhs.to(beCloseTo(rhs))
 }
 
+/// A Nimble matcher that succeeds when a value is close to another. This is used for floating
+/// point values which can have imprecise results when doing arithmetic on them.
+///
+/// @see equal
 @discardableResult
 public func ≈(lhs: Expectation<Double>, rhs: Double) -> Bool {
     return lhs.to(beCloseTo(rhs))
 }
 
+/// A Nimble matcher that succeeds when a value is close to another. This is used for floating
+/// point values which can have imprecise results when doing arithmetic on them.
+///
+/// @see equal
 @discardableResult
 public func ≈(lhs: Expectation<Double>, rhs: (expected: Double, delta: Double)) -> Bool {
     return lhs.to(beCloseTo(rhs.expected, within: rhs.delta))
 }
 
+/// A Nimble matcher that succeeds when a value is close to another. This is used for floating
+/// point values which can have imprecise results when doing arithmetic on them.
+///
+/// @see equal
 @discardableResult
 public func ==(lhs: Expectation<Double>, rhs: (expected: Double, delta: Double)) -> Bool {
     return lhs.to(beCloseTo(rhs.expected, within: rhs.delta))
@@ -70,6 +94,11 @@ precedencegroup PlusMinusOperatorPrecedence {
 }
 
 infix operator ± : PlusMinusOperatorPrecedence
+
+/// A Nimble matcher that succeeds when a value is close to another. This is used for floating
+/// point values which can have imprecise results when doing arithmetic on them.
+///
+/// @see equal
 public func ±(lhs: Double, rhs: Double) -> (expected: Double, delta: Double) {
     return (expected: lhs, delta: rhs)
 }

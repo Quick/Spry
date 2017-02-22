@@ -72,7 +72,7 @@ extension UInt: ExpressibleByBooleanLiteral {
     }
 }
 
-internal func matcherWithFailureMessage<T>(_ matcher: Matcher<T>, postprocessor: @escaping () -> Void) -> Matcher<T> {
+private func matcherWithFailureMessage<T>(_ matcher: Matcher<T>, postprocessor: @escaping () -> Void) -> Matcher<T> {
     return Matcher { actualExpression in
         defer { postprocessor() }
         return try matcher.matcher(actualExpression)

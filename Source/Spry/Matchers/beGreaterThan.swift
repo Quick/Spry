@@ -10,6 +10,7 @@ public func beGreaterThan<T: Comparable>(_ expectedValue: T?) -> Matcher<T> {
     }
 }
 
+/// A Nimble matcher that succeeds when the actual value is greater than the expected value.
 @discardableResult
 public func ><T: Comparable>(lhs: Expectation<T>, rhs: T) -> Bool {
     return lhs.to(beGreaterThan(rhs))
