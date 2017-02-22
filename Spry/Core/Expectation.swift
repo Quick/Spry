@@ -10,12 +10,19 @@ import Foundation
 
 public struct Expectation<T> {
     
-    let expression: Expression<T>
+    private let expression: Expression<T>
+    fileprivate var matches: Bool = true
     
+    init(expression: Expression<T>) {
+        self.expression = expression
+    }
+    
+    @discardableResult
     public func to(_ matcher: Matcher<T>) -> Bool {
         return evaluate(matcher: matcher)
     }
     
+    @discardableResult
     public func toNot(_ matcher: Matcher<T>) -> Bool {
         return !evaluate(matcher: matcher)
     }

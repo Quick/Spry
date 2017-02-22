@@ -14,6 +14,7 @@ public struct NilLiteral: ExpressibleByNilLiteral {
 }
 
 extension NilLiteral: Equatable {}
+
 public func ==(lhs: NilLiteral, rhs: NilLiteral) -> Bool { return true }
 
 public func ==<T>(lhs: Expectation<T>, rhs: NilLiteral) -> Bool {
