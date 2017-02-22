@@ -17,6 +17,13 @@
 		549BF8F51E5DB79100308A6C /* EqualTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549BF8F41E5DB79100308A6C /* EqualTests.swift */; };
 		549BF9071E5DB9E100308A6C /* Spry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 549BF8FE1E5DB9E100308A6C /* Spry.framework */; };
 		549BF9161E5DBADA00308A6C /* Spry.h in Headers */ = {isa = PBXBuildFile; fileRef = 549BF8E31E5DAF7A00308A6C /* Spry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		549BF9171E5DBB1E00308A6C /* EqualTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549BF8F41E5DB79100308A6C /* EqualTests.swift */; };
+		549BF9191E5DBB5C00308A6C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549BF9181E5DBB5C00308A6C /* Helpers.swift */; };
+		549BF91A1E5DBB5C00308A6C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549BF9181E5DBB5C00308A6C /* Helpers.swift */; };
+		549BF91B1E5DBC4400308A6C /* Spry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549BF8ED1E5DB4FF00308A6C /* Spry.swift */; };
+		549BF91C1E5DBC4400308A6C /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549BF8E91E5DB4FF00308A6C /* Expectation.swift */; };
+		549BF91D1E5DBC4400308A6C /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549BF8EA1E5DB4FF00308A6C /* Expression.swift */; };
+		549BF91E1E5DBC4400308A6C /* Matcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549BF8EB1E5DB4FF00308A6C /* Matcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,7 @@
 		549BF8F41E5DB79100308A6C /* EqualTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EqualTests.swift; sourceTree = "<group>"; };
 		549BF8FE1E5DB9E100308A6C /* Spry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		549BF9061E5DB9E100308A6C /* SpryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		549BF9181E5DBB5C00308A6C /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +128,9 @@
 		549BF8E01E5DAF6D00308A6C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				549BF8E71E5DAF8D00308A6C /* Support Files */,
 				549BF8F41E5DB79100308A6C /* EqualTests.swift */,
+				549BF9181E5DBB5C00308A6C /* Helpers.swift */,
+				549BF8E71E5DAF8D00308A6C /* Support Files */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -355,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				549BF8F51E5DB79100308A6C /* EqualTests.swift in Sources */,
+				549BF9191E5DBB5C00308A6C /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +372,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				549BF91E1E5DBC4400308A6C /* Matcher.swift in Sources */,
+				549BF91C1E5DBC4400308A6C /* Expectation.swift in Sources */,
+				549BF91B1E5DBC4400308A6C /* Spry.swift in Sources */,
+				549BF91D1E5DBC4400308A6C /* Expression.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +383,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				549BF9171E5DBB1E00308A6C /* EqualTests.swift in Sources */,
+				549BF91A1E5DBB5C00308A6C /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,6 +689,7 @@
 		549BF9131E5DB9E100308A6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -701,6 +718,7 @@
 		549BF9141E5DB9E100308A6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
