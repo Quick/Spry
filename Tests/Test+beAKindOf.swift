@@ -14,7 +14,7 @@ fileprivate protocol TestProtocol {}
 fileprivate class TestClassConformingToProtocol: TestProtocol {}
 fileprivate struct TestStructConformingToProtocol: TestProtocol {}
 
-final class BeAKindOfSwiftTest: XCTestCase {
+final class Test_beAKindOf: XCTestCase {
     enum TestEnum {
         case one, two
     }
@@ -38,4 +38,3 @@ final class BeAKindOfSwiftTest: XCTestCase {
         XCTAssert(expect(testProtocolStruct).toNot(beAKindOf(TestClassConformingToProtocol.self)))
     }
 }
-

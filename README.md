@@ -18,9 +18,9 @@ You can also download or checkout this repo and simply copy the files into your 
 
 # Nimble-esque
 
-Spry is a stripped down (Lite) version of Nimble that includes most Matchers. However some Matchers don't make sense in the context of a Playground, so they have been removed.
+Spry is a stripped down (Lite) version of Nimble that includes a subset of Nimble's Matchers.
 
-Also, this is a port of Nimble only, since [Quick](http://github.com/Quick/Quick) doesn't really make sense in the context of a Playground. 
+> Note: This is a port of Nimble only, since [Quick](http://github.com/Quick/Quick) doesn't really make sense in the context of a Playground. 
 
 The following keywords are **NOT** included (since they are a part of Quick):
 
@@ -34,7 +34,7 @@ The following keywords **ARE** included:
 `to`  
 `toEventually` 
 
-The following Matchers are also included:
+Along with the following Matchers:
 
 `beAKindOf`  
 `beAnInstanceOf`  
@@ -72,4 +72,4 @@ expect(add(4, 5)).to(equal(9))
 
 If you're already familiar with Nimble, then you already know how to use Spry.
 
-For full details on how to write your tests with Spry, I suggest reading over the [Nimble docs](https://github.com/Quick/Nimble/blob/master/README.md).
+> For full details on how to write your tests with Spry, I suggest reading over the [Nimble docs](https://github.com/Quick/Nimble/blob/master/README.md). Keeping in mind that not all features are currently included.

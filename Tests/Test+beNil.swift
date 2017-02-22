@@ -9,7 +9,7 @@
 import XCTest
 @testable import Spry
 
-final class BeNilTests: XCTestCase {
+final class Test_beNil: XCTestCase {
     
     func testBeNil() {
         XCTAssert(expect(nil as Int?).to(beNil()))

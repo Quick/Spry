@@ -9,7 +9,7 @@
 import XCTest
 import Spry
 
-final class EqualTests: XCTestCase {
+final class Test_equal: XCTestCase {
     
     func testEquality() {
         XCTAssert(expect(1 as CInt).to(equal(1 as CInt)))

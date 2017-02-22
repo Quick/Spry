@@ -6,6 +6,9 @@
 //
 //
 
-import Foundation
+import XCTest
 import Spry
 
+final class Test_beAnInstanceOf: XCTestCase {
+    
+}
