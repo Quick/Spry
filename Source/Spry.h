@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double Spry_macOSVersionNumber;
 FOUNDATION_EXPORT const unsigned char Spry_macOSVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Spry_macOS/PublicHeader.h>
-
-

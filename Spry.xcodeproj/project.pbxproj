@@ -238,9 +238,8 @@
 		5487CF441E5E53A8001571EF /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				5487CF621E5E53A8001571EF /* Spry.h */,
-				5487CF451E5E53A8001571EF /* Info.plist */,
 				5487CF461E5E53A8001571EF /* Spry */,
+				5496708F1E5E6F7300D9B0FC /* Support Files */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -302,6 +301,15 @@
 				5487CF9D1E5E5C95001571EF /* Date+Extension.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		5496708F1E5E6F7300D9B0FC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5487CF621E5E53A8001571EF /* Spry.h */,
+				5487CF451E5E53A8001571EF /* Info.plist */,
+			);
+			name = "Support Files";
 			sourceTree = "<group>";
 		};
 		549BF82D1E5DA17800308A6C = {
