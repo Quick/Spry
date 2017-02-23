@@ -8,10 +8,10 @@
 
 import Foundation
 
-let DefaultDelta = 0.0001
+internal let DefaultDelta = 0.0001
 
-private func isCloseTo(_ actualValue: Double, expectedValue: Double, delta: Double = DefaultDelta) -> Bool {
-    return abs(actualValue - expectedValue) < delta
+private func isCloseTo(_ actualValue: ConvertibleToDouble?, expectedValue: ConvertibleToDouble, delta: Double) -> Bool {
+    return actualValue != nil && abs(actualValue!.doubleValue - expectedValue.doubleValue) < delta
 }
 
 /// A Nimble matcher that succeeds when a value is close to another. This is used for floating
@@ -19,9 +19,18 @@ private func isCloseTo(_ actualValue: Double, expectedValue: Double, delta: Doub
 ///
 /// @see equal
 public func beCloseTo(_ expectedValue: Double, within delta: Double = DefaultDelta) -> Matcher<Double> {
-    return Matcher { expression in
-        guard let actualValue = try expression.evaluate() else { return false }
-        return isCloseTo(actualValue, expectedValue: expectedValue, delta: delta)
+    return Matcher { actualExpression in
+        return isCloseTo(try actualExpression.evaluate(), expectedValue: expectedValue, delta: delta)
+    }
+}
+
+/// A Nimble matcher that succeeds when a value is close to another. This is used for floating
+/// point values which can have imprecise results when doing arithmetic on them.
+///
+/// @see equal
+public func beCloseTo(_ expectedValue: ConvertibleToDouble, within delta: Double = DefaultDelta) -> Matcher<ConvertibleToDouble> {
+    return Matcher { actualExpression in
+        return isCloseTo(try actualExpression.evaluate(), expectedValue: expectedValue, delta: delta)
     }
 }
 
@@ -30,8 +39,8 @@ public func beCloseTo(_ expectedValue: Double, within delta: Double = DefaultDel
 ///
 /// @see equal
 public func beCloseTo(_ expectedValues: [Double], within delta: Double = DefaultDelta) -> Matcher <[Double]> {
-    return Matcher { expression in
-        if let actual = try expression.evaluate() {
+    return Matcher { actualExpression in
+        if let actual = try actualExpression.evaluate() {
             if actual.count != expectedValues.count {
                 return false
             } else {
@@ -55,7 +64,6 @@ infix operator ≈ : ComparisonPrecedence
 /// point values which can have imprecise results when doing arithmetic on them.
 ///
 /// @see equal
-@discardableResult
 public func ≈(lhs: Expectation<[Double]>, rhs: [Double]) -> Bool {
     return lhs.to(beCloseTo(rhs))
 }
@@ -64,8 +72,7 @@ public func ≈(lhs: Expectation<[Double]>, rhs: [Double]) -> Bool {
 /// point values which can have imprecise results when doing arithmetic on them.
 ///
 /// @see equal
-@discardableResult
-public func ≈(lhs: Expectation<Double>, rhs: Double) -> Bool {
+public func ≈(lhs: Expectation<ConvertibleToDouble>, rhs: ConvertibleToDouble) -> Bool {
     return lhs.to(beCloseTo(rhs))
 }
 
@@ -73,8 +80,7 @@ public func ≈(lhs: Expectation<Double>, rhs: Double) -> Bool {
 /// point values which can have imprecise results when doing arithmetic on them.
 ///
 /// @see equal
-@discardableResult
-public func ≈(lhs: Expectation<Double>, rhs: (expected: Double, delta: Double)) -> Bool {
+public func ≈(lhs: Expectation<ConvertibleToDouble>, rhs: (expected: ConvertibleToDouble, delta: Double)) -> Bool {
     return lhs.to(beCloseTo(rhs.expected, within: rhs.delta))
 }
 
@@ -82,8 +88,7 @@ public func ≈(lhs: Expectation<Double>, rhs: (expected: Double, delta: Double)
 /// point values which can have imprecise results when doing arithmetic on them.
 ///
 /// @see equal
-@discardableResult
-public func ==(lhs: Expectation<Double>, rhs: (expected: Double, delta: Double)) -> Bool {
+public func == (lhs: Expectation<ConvertibleToDouble>, rhs: (expected: ConvertibleToDouble, delta: Double)) -> Bool {
     return lhs.to(beCloseTo(rhs.expected, within: rhs.delta))
 }
 
@@ -99,6 +104,6 @@ infix operator ± : PlusMinusOperatorPrecedence
 /// point values which can have imprecise results when doing arithmetic on them.
 ///
 /// @see equal
-public func ±(lhs: Double, rhs: Double) -> (expected: Double, delta: Double) {
+public func ±(lhs: ConvertibleToDouble, rhs: Double) -> (expected: ConvertibleToDouble, delta: Double) {
     return (expected: lhs, delta: rhs)
 }
