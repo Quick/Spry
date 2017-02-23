@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public protocol ConvertibleToDouble {
     var doubleValue: CDouble { get }
