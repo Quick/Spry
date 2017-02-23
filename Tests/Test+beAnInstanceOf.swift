@@ -16,8 +16,8 @@ fileprivate struct TestStructConformingToProtocol: TestProtocol {}
 final class Test_beAnInstanceOf: XCTestCase {
     
     func testPositiveMatch() {
-        expect(NSNull()).to(beAnInstanceOf(NSNull.self))
-        expect(NSNumber(value:1)).toNot(beAnInstanceOf(NSDate.self))
+        XCTAssert(expect(NSNull()).to(beAnInstanceOf(NSNull.self)))
+        XCTAssert(expect(NSNumber(value:1)).toNot(beAnInstanceOf(NSDate.self)))
     }
     
     enum TestEnum {
@@ -25,20 +25,20 @@ final class Test_beAnInstanceOf: XCTestCase {
     }
     
     func testPositiveMatchSwiftTypes() {
-        expect(1).to(beAnInstanceOf(Int.self))
-        expect("test").to(beAnInstanceOf(String.self))
+        XCTAssert(expect(1).to(beAnInstanceOf(Int.self)))
+        XCTAssert(expect("test").to(beAnInstanceOf(String.self)))
         
-        expect(TestEnum.one).to(beAnInstanceOf(TestEnum.self))
+        XCTAssert(expect(TestEnum.one).to(beAnInstanceOf(TestEnum.self)))
         
         let testProtocolClass = TestClassConformingToProtocol()
-        expect(testProtocolClass).to(beAnInstanceOf(TestClassConformingToProtocol.self))
-        expect(testProtocolClass).toNot(beAnInstanceOf(TestProtocol.self))
-        expect(testProtocolClass).toNot(beAnInstanceOf(TestStructConformingToProtocol.self))
+        XCTAssert(expect(testProtocolClass).to(beAnInstanceOf(TestClassConformingToProtocol.self)))
+        XCTAssert(expect(testProtocolClass).toNot(beAnInstanceOf(TestProtocol.self)))
+        XCTAssert(expect(testProtocolClass).toNot(beAnInstanceOf(TestStructConformingToProtocol.self)))
         
         let testProtocolStruct = TestStructConformingToProtocol()
-        expect(testProtocolStruct).to(beAnInstanceOf(TestStructConformingToProtocol.self))
-        expect(testProtocolStruct).toNot(beAnInstanceOf(TestProtocol.self))
-        expect(testProtocolStruct).toNot(beAnInstanceOf(TestClassConformingToProtocol.self))
+        XCTAssert(expect(testProtocolStruct).to(beAnInstanceOf(TestStructConformingToProtocol.self)))
+        XCTAssert(expect(testProtocolStruct).toNot(beAnInstanceOf(TestProtocol.self)))
+        XCTAssert(expect(testProtocolStruct).toNot(beAnInstanceOf(TestClassConformingToProtocol.self)))
     }
     
 }

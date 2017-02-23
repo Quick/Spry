@@ -93,6 +93,20 @@
 		5487CFC91E5E636C001571EF /* Test+match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487CFC71E5E636C001571EF /* Test+match.swift */; };
 		5487CFCB1E5E637A001571EF /* Test+satisfyAnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487CFCA1E5E637A001571EF /* Test+satisfyAnyOf.swift */; };
 		5487CFCC1E5E637A001571EF /* Test+satisfyAnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487CFCA1E5E637A001571EF /* Test+satisfyAnyOf.swift */; };
+		5487CFCE1E5E673C001571EF /* Comparable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487CFCD1E5E673C001571EF /* Comparable+Extension.swift */; };
+		5487CFCF1E5E673C001571EF /* Comparable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487CFCD1E5E673C001571EF /* Comparable+Extension.swift */; };
+		5487CFD11E5E6756001571EF /* ConvertibleToDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487CFD01E5E6756001571EF /* ConvertibleToDouble.swift */; };
+		5487CFD21E5E6756001571EF /* ConvertibleToDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487CFD01E5E6756001571EF /* ConvertibleToDouble.swift */; };
+		5487CFD71E5E6897001571EF /* Test+beIdenticalToObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487CFD61E5E6897001571EF /* Test+beIdenticalToObject.swift */; };
+		5487CFD81E5E6897001571EF /* Test+beIdenticalToObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487CFD61E5E6897001571EF /* Test+beIdenticalToObject.swift */; };
+		5487CFDA1E5E6973001571EF /* Test+beTrue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487CFD91E5E6973001571EF /* Test+beTrue.swift */; };
+		5487CFDB1E5E6973001571EF /* Test+beTrue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487CFD91E5E6973001571EF /* Test+beTrue.swift */; };
+		5487CFDD1E5E697C001571EF /* Test+beTruthy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487CFDC1E5E697C001571EF /* Test+beTruthy.swift */; };
+		5487CFDE1E5E697C001571EF /* Test+beTruthy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487CFDC1E5E697C001571EF /* Test+beTruthy.swift */; };
+		5487CFE01E5E6984001571EF /* Test+beFalse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487CFDF1E5E6984001571EF /* Test+beFalse.swift */; };
+		5487CFE11E5E6984001571EF /* Test+beFalse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487CFDF1E5E6984001571EF /* Test+beFalse.swift */; };
+		5487CFE31E5E698B001571EF /* Test+beFalsy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487CFE21E5E698B001571EF /* Test+beFalsy.swift */; };
+		5487CFE41E5E698B001571EF /* Test+beFalsy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487CFE21E5E698B001571EF /* Test+beFalsy.swift */; };
 		549BF8D11E5DA9DD00308A6C /* Spry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 549BF8C71E5DA9DC00308A6C /* Spry.framework */; };
 		549BF8F51E5DB79100308A6C /* Test+equal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549BF8F41E5DB79100308A6C /* Test+equal.swift */; };
 		549BF9071E5DB9E100308A6C /* Spry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 549BF8FE1E5DB9E100308A6C /* Spry.framework */; };
@@ -168,6 +182,13 @@
 		5487CFC41E5E635D001571EF /* Test+haveCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Test+haveCount.swift"; sourceTree = "<group>"; };
 		5487CFC71E5E636C001571EF /* Test+match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Test+match.swift"; sourceTree = "<group>"; };
 		5487CFCA1E5E637A001571EF /* Test+satisfyAnyOf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Test+satisfyAnyOf.swift"; sourceTree = "<group>"; };
+		5487CFCD1E5E673C001571EF /* Comparable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Comparable+Extension.swift"; sourceTree = "<group>"; };
+		5487CFD01E5E6756001571EF /* ConvertibleToDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertibleToDouble.swift; sourceTree = "<group>"; };
+		5487CFD61E5E6897001571EF /* Test+beIdenticalToObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Test+beIdenticalToObject.swift"; sourceTree = "<group>"; };
+		5487CFD91E5E6973001571EF /* Test+beTrue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Test+beTrue.swift"; sourceTree = "<group>"; };
+		5487CFDC1E5E697C001571EF /* Test+beTruthy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Test+beTruthy.swift"; sourceTree = "<group>"; };
+		5487CFDF1E5E6984001571EF /* Test+beFalse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Test+beFalse.swift"; sourceTree = "<group>"; };
+		5487CFE21E5E698B001571EF /* Test+beFalsy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Test+beFalsy.swift"; sourceTree = "<group>"; };
 		549BF8C71E5DA9DC00308A6C /* Spry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		549BF8D01E5DA9DD00308A6C /* SpryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		549BF8E11E5DAF6D00308A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -237,6 +258,8 @@
 		5487CF471E5E53A8001571EF /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				5487CFCD1E5E673C001571EF /* Comparable+Extension.swift */,
+				5487CFD01E5E6756001571EF /* ConvertibleToDouble.swift */,
 				5487CF481E5E53A8001571EF /* Expectation.swift */,
 				5487CF491E5E53A8001571EF /* Expression.swift */,
 				5487CF4A1E5E53A8001571EF /* Helpers.swift */,
@@ -275,6 +298,7 @@
 		5487CF9C1E5E5C8E001571EF /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				5487CFB51E5E6316001571EF /* Test+beLogical.swift */,
 				5487CF9D1E5E5C95001571EF /* Date+Extension.swift */,
 			);
 			name = Helpers;
@@ -312,9 +336,13 @@
 				5487CFA91E5E62D9001571EF /* Test+beGreaterThan.swift */,
 				5487CFA61E5E62CA001571EF /* Test+beGreaterThanOrEqualTo.swift */,
 				5487CFAC1E5E62E9001571EF /* Test+beIdenticalTo.swift */,
+				5487CFD61E5E6897001571EF /* Test+beIdenticalToObject.swift */,
 				5487CFB21E5E6307001571EF /* Test+beLessThan.swift */,
 				5487CFAF1E5E62FC001571EF /* Test+beLessThanOrEqualTo.swift */,
-				5487CFB51E5E6316001571EF /* Test+beLogical.swift */,
+				5487CFD91E5E6973001571EF /* Test+beTrue.swift */,
+				5487CFDC1E5E697C001571EF /* Test+beTruthy.swift */,
+				5487CFDF1E5E6984001571EF /* Test+beFalse.swift */,
+				5487CFE21E5E698B001571EF /* Test+beFalsy.swift */,
 				549BF9261E5DEC8B00308A6C /* Test+beNil.swift */,
 				5487CFB81E5E6335001571EF /* Test+beVoid.swift */,
 				5487CFBE1E5E6349001571EF /* Test+contain.swift */,
@@ -526,6 +554,7 @@
 				5487CF931E5E53A8001571EF /* satisfyAnyOf.swift in Sources */,
 				5487CF771E5E53A8001571EF /* beGreaterThan.swift in Sources */,
 				5487CF651E5E53A8001571EF /* Expectation.swift in Sources */,
+				5487CFCE1E5E673C001571EF /* Comparable+Extension.swift in Sources */,
 				5487CF8F1E5E53A8001571EF /* haveCount.swift in Sources */,
 				5487CF691E5E53A8001571EF /* Helpers.swift in Sources */,
 				5487CF8D1E5E53A8001571EF /* equal.swift in Sources */,
@@ -540,6 +569,7 @@
 				5487CF7B1E5E53A8001571EF /* beIdenticalTo.swift in Sources */,
 				5487CF851E5E53A8001571EF /* beVoid.swift in Sources */,
 				5487CF731E5E53A8001571EF /* beEmpty.swift in Sources */,
+				5487CFD11E5E6756001571EF /* ConvertibleToDouble.swift in Sources */,
 				5487CF711E5E53A8001571EF /* beCloseTo.swift in Sources */,
 				5487CF951E5E53A8001571EF /* Spry.swift in Sources */,
 				5487CF891E5E53A8001571EF /* containElementSatisfying.swift in Sources */,
@@ -553,6 +583,8 @@
 			files = (
 				5487CFA11E5E61CE001571EF /* Test+beEmpty.swift in Sources */,
 				5487CFCB1E5E637A001571EF /* Test+satisfyAnyOf.swift in Sources */,
+				5487CFE01E5E6984001571EF /* Test+beFalse.swift in Sources */,
+				5487CFDD1E5E697C001571EF /* Test+beTruthy.swift in Sources */,
 				5487CFC51E5E635D001571EF /* Test+haveCount.swift in Sources */,
 				5487CFB61E5E6316001571EF /* Test+beLogical.swift in Sources */,
 				5487CFAD1E5E62E9001571EF /* Test+beIdenticalTo.swift in Sources */,
@@ -563,11 +595,14 @@
 				5487CF9A1E5E5B52001571EF /* Test+beCloseTo.swift in Sources */,
 				5487CFC81E5E636C001571EF /* Test+match.swift in Sources */,
 				5487CFA71E5E62CA001571EF /* Test+beGreaterThanOrEqualTo.swift in Sources */,
+				5487CFDA1E5E6973001571EF /* Test+beTrue.swift in Sources */,
 				549BF8F51E5DB79100308A6C /* Test+equal.swift in Sources */,
 				5487CFB31E5E6307001571EF /* Test+beLessThan.swift in Sources */,
 				5487CFC21E5E6352001571EF /* Test+endWIth.swift in Sources */,
 				5487CFB91E5E6335001571EF /* Test+beVoid.swift in Sources */,
+				5487CFE31E5E698B001571EF /* Test+beFalsy.swift in Sources */,
 				5487CFB01E5E62FC001571EF /* Test+beLessThanOrEqualTo.swift in Sources */,
+				5487CFD71E5E6897001571EF /* Test+beIdenticalToObject.swift in Sources */,
 				5487CFAA1E5E62D9001571EF /* Test+beGreaterThan.swift in Sources */,
 				54E63D451E5E47360060AC66 /* Test+beAnInstanceOf.swift in Sources */,
 				5487CFBC1E5E6343001571EF /* Test+containElementSatisfying.swift in Sources */,
@@ -586,6 +621,7 @@
 				5487CF941E5E53A8001571EF /* satisfyAnyOf.swift in Sources */,
 				5487CF781E5E53A8001571EF /* beGreaterThan.swift in Sources */,
 				5487CF661E5E53A8001571EF /* Expectation.swift in Sources */,
+				5487CFCF1E5E673C001571EF /* Comparable+Extension.swift in Sources */,
 				5487CF901E5E53A8001571EF /* haveCount.swift in Sources */,
 				5487CF6A1E5E53A8001571EF /* Helpers.swift in Sources */,
 				5487CF8E1E5E53A8001571EF /* equal.swift in Sources */,
@@ -600,6 +636,7 @@
 				5487CF7C1E5E53A8001571EF /* beIdenticalTo.swift in Sources */,
 				5487CF861E5E53A8001571EF /* beVoid.swift in Sources */,
 				5487CF741E5E53A8001571EF /* beEmpty.swift in Sources */,
+				5487CFD21E5E6756001571EF /* ConvertibleToDouble.swift in Sources */,
 				5487CF721E5E53A8001571EF /* beCloseTo.swift in Sources */,
 				5487CF961E5E53A8001571EF /* Spry.swift in Sources */,
 				5487CF8A1E5E53A8001571EF /* containElementSatisfying.swift in Sources */,
@@ -613,6 +650,8 @@
 			files = (
 				5487CFA21E5E61CE001571EF /* Test+beEmpty.swift in Sources */,
 				5487CFCC1E5E637A001571EF /* Test+satisfyAnyOf.swift in Sources */,
+				5487CFE11E5E6984001571EF /* Test+beFalse.swift in Sources */,
+				5487CFDE1E5E697C001571EF /* Test+beTruthy.swift in Sources */,
 				5487CFC61E5E635D001571EF /* Test+haveCount.swift in Sources */,
 				5487CFB71E5E6316001571EF /* Test+beLogical.swift in Sources */,
 				5487CFAE1E5E62E9001571EF /* Test+beIdenticalTo.swift in Sources */,
@@ -623,11 +662,14 @@
 				5487CF9B1E5E5B52001571EF /* Test+beCloseTo.swift in Sources */,
 				5487CFC91E5E636C001571EF /* Test+match.swift in Sources */,
 				5487CFA81E5E62CA001571EF /* Test+beGreaterThanOrEqualTo.swift in Sources */,
+				5487CFDB1E5E6973001571EF /* Test+beTrue.swift in Sources */,
 				549BF9171E5DBB1E00308A6C /* Test+equal.swift in Sources */,
 				5487CFB41E5E6307001571EF /* Test+beLessThan.swift in Sources */,
 				5487CFC31E5E6352001571EF /* Test+endWIth.swift in Sources */,
 				5487CFBA1E5E6335001571EF /* Test+beVoid.swift in Sources */,
+				5487CFE41E5E698B001571EF /* Test+beFalsy.swift in Sources */,
 				5487CFB11E5E62FC001571EF /* Test+beLessThanOrEqualTo.swift in Sources */,
+				5487CFD81E5E6897001571EF /* Test+beIdenticalToObject.swift in Sources */,
 				5487CFAB1E5E62D9001571EF /* Test+beGreaterThan.swift in Sources */,
 				54E63D461E5E47370060AC66 /* Test+beAnInstanceOf.swift in Sources */,
 				5487CFBD1E5E6343001571EF /* Test+containElementSatisfying.swift in Sources */,

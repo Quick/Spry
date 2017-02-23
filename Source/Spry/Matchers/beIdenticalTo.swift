@@ -11,14 +11,14 @@ public func beIdenticalTo(_ expected: Any?) -> Matcher<Any> {
 
 /// A Nimble matcher that succeeds when the actual value is the same instance
 /// as the expected instance.
-public func === (lhs: Expectation<Any>, rhs: Any?) {
-    lhs.to(beIdenticalTo(rhs))
+public func === (lhs: Expectation<Any>, rhs: Any?) -> Bool {
+    return lhs.to(beIdenticalTo(rhs))
 }
 
 /// A Nimble matcher that succeeds when the actual value is not the same instance
 /// as the expected instance.
-public func !== (lhs: Expectation<Any>, rhs: Any?) {
-    lhs.toNot(beIdenticalTo(rhs))
+public func !== (lhs: Expectation<Any>, rhs: Any?) -> Bool {
+    return lhs.toNot(beIdenticalTo(rhs))
 }
 
 /// A Nimble matcher that succeeds when the actual value is the same instance
