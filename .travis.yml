@@ -1,6 +1,6 @@
 language: swift
-xcode_project: Spry.xcodeproj
 osx_image: xcode8.2
-os:
-  - ios
-  - osx
+before_install:
+  - gem install fastlane -NV
+script:
+  - ./fastlane test
