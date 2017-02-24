@@ -1,6 +1,0 @@
-fastlane_version "2.18.3"
-
-lane :test do
-  scan(scheme: "Spry-macOS", code_coverage: true)
-  scan(scheme: "Spry-iOS", code_coverage: true)
-end
