@@ -1,4 +1,5 @@
-![](https://travis-ci.org/shaps80/Spry.svg?branch=master)
+<a href="https://travis-ci.org/shaps80/Spry">![](https://travis-ci.org/shaps80/Spry.svg?branch=master)</a>
+<a href="https://travis-ci.org/shaps80/Spry">![](https://img.shields.io/badge/platform-iOS%20%7C%20macos-lightgrey.svg)</a>
 
 # Spry
 
