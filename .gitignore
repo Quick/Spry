@@ -19,3 +19,8 @@ Carthage/Build
 # Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
 # Packages/
 .build/
+
+# Fastlane
+.fastlane/report.xml
+.fastlane/test_output
+.fastlane/README.md
