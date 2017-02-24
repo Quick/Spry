@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Version</key>
+	<string>1.0</string>
+	<key>Name</key>
+	<string>Code</string>
+	<key>LiveViewMode</key>
+	<string>HiddenByDefault</string>
+	<key>LiveViewEdgeToEdge</key>
+	<false/>
+	<key>PlaygroundLoggingMode</key>
+	<string>Normal</string>
+	<key>Hints</key>
+	<array>
+		<dict>
+			<key>Content</key>
+			<string>`expect(actual).to(equal(expected))`</string>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<string>`expect(actual).to(beNil)`</string>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<string>`expect(actual).to(beEmpty)`</string>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<string>`expect(actual).toNot(haveCount(4))`</string>
+		</dict>
+	</array>
+</dict>
+</plist>
