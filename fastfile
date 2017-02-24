@@ -1,0 +1,6 @@
+fastlane_version "2.18.3"
+
+lane :test do
+  scan(project: "Spry/Spry.xcodeproj", scheme: "Spry-macOS")
+  scan(project: "Spry/Spry.xcodeproj", scheme: "Spry-iOS")
+end
