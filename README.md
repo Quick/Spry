@@ -1,7 +1,8 @@
 <a href="https://travis-ci.org/shaps80/Spry">![Travis](https://travis-ci.org/shaps80/Spry.svg?branch=master)</a>
 <a href="https://travis-ci.org/shaps80/Spry">![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macos-lightgrey.svg)</a>
-<a href="https://github.com/shaps80/Spry/raw/master/Playgrounds/Spry-Xcode.zip">![Xcode Playgrounds](https://img.shields.io/badge/playground-xcode-blue.svg)
-<a href="https://github.com/shaps80/Spry/raw/master/Playgrounds/Spry-iPad.zip">![iPad Playgrounds](https://img.shields.io/badge/playground-ipad-blue.svg)
+<a href="https://github.com/shaps80/Spry/raw/master/Playgrounds/Spry-Xcode.zip">![Xcode Playgrounds](https://img.shields.io/badge/playground-xcode-blue.svg)</a>
+<a href="https://github.com/shaps80/Spry/raw/master/Playgrounds/Spry-iPad.zip">![iPad Playgrounds](https://img.shields.io/badge/playground-ipad-blue.svg)</a>
+<a href="https://github.com/Quick/Quick/blob/master/LICENSE">![License](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg)</a>
 
 # Spry
 
