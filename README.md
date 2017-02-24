@@ -1,7 +1,7 @@
 <a href="https://travis-ci.org/shaps80/Spry">![Travis](https://travis-ci.org/shaps80/Spry.svg?branch=master)</a>
 <a href="https://travis-ci.org/shaps80/Spry">![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macos-lightgrey.svg)</a>
 <a href="https://github.com/shaps80/Spry/raw/master/Playgrounds/Spry-Xcode.zip">![Xcode Playgrounds](https://img.shields.io/badge/playground-xcode-blue.svg)
-<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/shaps80/Spry/tree/master/Playgrounds/Spry-iPad.playgroundbook">![iPad Playgrounds](https://img.shields.io/badge/playground-ipad-blue.svg)
+<a href="https://github.com/shaps80/Spry/raw/master/Playgrounds/Spry-iPad.zip">![iPad Playgrounds](https://img.shields.io/badge/playground-ipad-blue.svg)
 
 # Spry
 
@@ -18,9 +18,11 @@ There are a couple of ways you can download Spry.
 ## Template
 You can download a Playground including the lastest version of Spry. Consider this a boilerplate template. It includes Spry in the `Sources` folder of the Playground, so you can simply start writing tests alongside your code in the Playground.
 
-Xcode
+Mac - Xcode Playgrounds
 <a href="https://github.com/shaps80/Spry/raw/master/Playgrounds/Spry-Xcode.zip">![Xcode Playgrounds](https://img.shields.io/badge/playground-xcode-blue.svg)</>
-<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/shaps80/Spry/tree/master/Playgrounds/Spry-iPad.playgroundbook">![iPad Playgrounds](https://img.shields.io/badge/playground-ipad-blue.svg)</>
+
+iPad - Swift Playgrounds
+<a href="https://github.com/shaps80/Spry/raw/master/Playgrounds/Spry-iPad.zip">![iPad Playgrounds](https://img.shields.io/badge/playground-ipad-blue.svg)</>
 
 ## Manual
 You can also download or checkout this repo and simply copy the files into your existing Playground manually. Simply copy the entire `Spry` folder into your Playground's `Sources` folder. Easy Peasy!
