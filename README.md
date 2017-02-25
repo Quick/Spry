@@ -44,7 +44,6 @@ Spry supports the following features:
 
 - [x] `expect`  
 - [x] `to`  
-- [x] `toEventually`  
 - [x] `beAKindOf`  
 - [x] `beAnInstanceOf`  
 - [x] `beCloseTo`  
@@ -65,6 +64,8 @@ Spry supports the following features:
 - [x] `haveCount`  
 - [x] `match`  
 - [x] `satisfyAnyOf`  
+
+- [ ] `toEventually`  
 - [ ] `async`  
 - [ ] `matchError`  
 - [ ] `throwError`  
