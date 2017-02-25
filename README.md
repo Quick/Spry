@@ -8,8 +8,15 @@
 
 Spry is a Swift Playgrounds Unit Testing library based on [Nimble](http://github.com/Quick/Nimble).
 
-<img src="https://github.com/shaps80/Spry/raw/master/Screenshots/xcode.png" width="50%">
-<img src="https://github.com/shaps80/Spry/raw/master/Screenshots/ipad.png" width="50%">
+<style>
+.images {
+    list-style: none;
+}
+</style>
+
+- <img src="https://github.com/shaps80/Spry/raw/master/Screenshots/ipad.jpg">
+- <img src="https://github.com/shaps80/Spry/raw/master/Screenshots/glossary.jpg">
+- <img src="https://github.com/shaps80/Spry/raw/master/Screenshots/xcode.jpg">
 
 The best thing about Spry is that the API matches Nimble perfectly. Which means once you've created your code and tests in a Playground, you can copy them directly into your Xcode project without needing to (re)write them again :)
 
