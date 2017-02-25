@@ -10,9 +10,9 @@ Spry is a Swift Playgrounds Unit Testing library based on [Nimble](http://github
 
 <table>
 <tr>
-    <td><img src="https://github.com/shaps80/Spry/raw/master/Screenshots/ipad.jpg"></td>
-    <td><img src="https://github.com/shaps80/Spry/raw/master/Screenshots/glossary.jpg"></td>
-    <td><img src="https://github.com/shaps80/Spry/raw/master/Screenshots/xcode.jpg"></td>
+    <td><img style="cursor: pointer" src="https://github.com/shaps80/Spry/raw/master/Screenshots/ipad.jpg"></td>
+    <td><img style="cursor: pointer" src="https://github.com/shaps80/Spry/raw/master/Screenshots/glossary.jpg"></td>
+    <td><img style="cursor: pointer" src="https://github.com/shaps80/Spry/raw/master/Screenshots/xcode.jpg"></td>
 </tr>
 </table>
 
