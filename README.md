@@ -34,33 +34,33 @@ The following features are **NOT** supported (since they are a part of Quick):
 
 Spry supports the following features:
 
-<input type="checkbox" disabled checked>`expect`  
-<input type="checkbox" disabled checked>`to`  
-<input type="checkbox" disabled checked>`toEventually`  
-<input type="checkbox" disabled checked>`beAKindOf`  
-<input type="checkbox" disabled checked>`beAnInstanceOf`  
-<input type="checkbox" disabled checked>`beCloseTo`  
-<input type="checkbox" disabled checked>`beEmpty`  
-<input type="checkbox" disabled checked>`beginWith`  
-<input type="checkbox" disabled checked>`beGreaterThan`  
-<input type="checkbox" disabled checked>`beGreaterThanOrEqualTo`  
-<input type="checkbox" disabled checked>`beIdenticalTo`  
-<input type="checkbox" disabled checked>`beLessThan`  
-<input type="checkbox" disabled checked>`beLessThanOrEqualTo`  
-<input type="checkbox" disabled checked>`beLogical`  
-<input type="checkbox" disabled checked>`beNil`  
-<input type="checkbox" disabled checked>`beVoid`  
-<input type="checkbox" disabled checked>`containElementSatisfying`  
-<input type="checkbox" disabled checked>`contain`  
-<input type="checkbox" disabled checked>`endWith`  
-<input type="checkbox" disabled checked>`equal`  
-<input type="checkbox" disabled checked>`haveCount`  
-<input type="checkbox" disabled checked>`match`  
-<input type="checkbox" disabled checked>`satisfyAnyOf`  
-<input type="checkbox" disabled>`async`  
-<input type="checkbox" disabled>`matchError`  
-<input type="checkbox" disabled>`throwError`  
-<input type="checkbox" disabled>`failWithMessage`  
+- [x] `expect`  
+- [x] `to`  
+- [x] `toEventually`  
+- [x] `beAKindOf`  
+- [x] `beAnInstanceOf`  
+- [x] `beCloseTo`  
+- [x] `beEmpty`  
+- [x] `beginWith`  
+- [x] `beGreaterThan`  
+- [x] `beGreaterThanOrEqualTo`  
+- [x] `beIdenticalTo`  
+- [x] `beLessThan`  
+- [x] `beLessThanOrEqualTo`  
+- [x] `beLogical`  
+- [x] `beNil`  
+- [x] `beVoid`  
+- [x] `containElementSatisfying`  
+- [x] `contain`  
+- [x] `endWith`  
+- [x] `equal`  
+- [x] `haveCount`  
+- [x] `match`  
+- [x] `satisfyAnyOf`  
+- [ ] `async`  
+- [ ] `matchError`  
+- [ ] `throwError`  
+- [ ] `failWithMessage`  
 
 # Usage
 
