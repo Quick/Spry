@@ -16,16 +16,16 @@ class Test_beIdenticalToObject: XCTestCase {
     private let testObjectB = BeIdenticalToObjectTester()
     
     func testBeIdenticalToPositive() {
-        XCTAssert(expect(self.testObjectA).to(beIdenticalTo(testObjectA)))
+        XCTAssert(expect(self.testObjectA).to(beIdenticalTo(testObjectA)).expectationResult)
     }
     
     func testBeIdenticalToNegative() {
-        XCTAssert(expect(self.testObjectA).toNot(beIdenticalTo(testObjectB)))
+        XCTAssert(expect(self.testObjectA).toNot(beIdenticalTo(testObjectB)).expectationResult)
     }
     
     func testOperators() {
-        XCTAssert(expect(self.testObjectA) === testObjectA)
-        XCTAssert(expect(self.testObjectA) !== testObjectB)
+        XCTAssert((expect(self.testObjectA) === testObjectA).expectationResult)
+        XCTAssert((expect(self.testObjectA) !== testObjectB).expectationResult)
     }
     
 }

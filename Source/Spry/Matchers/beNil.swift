@@ -29,12 +29,12 @@ public func ==(lhs: NilLiteral, rhs: NilLiteral) -> Bool { return true }
 
 /// A Nimble matcher that succeeds when the actual value is nil.
 @discardableResult
-public func ==<T>(lhs: Expectation<T>, rhs: NilLiteral) -> Bool {
+public func ==<T>(lhs: Expectation<T>, rhs: NilLiteral) -> ExpectationResult {
     return lhs.to(beNil())
 }
 
 /// A Nimble matcher that succeeds when the actual value is not nil.
 @discardableResult
-public func !=<T>(lhs: Expectation<T>, rhs: NilLiteral) -> Bool {
+public func !=<T>(lhs: Expectation<T>, rhs: NilLiteral) -> ExpectationResult {
     return lhs.toNot(beNil())
 }

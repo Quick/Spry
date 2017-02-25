@@ -12,11 +12,11 @@ import Spry
 final class Test_beTrue: XCTestCase {
     
     func testShouldMatchTrue() {
-        XCTAssert(expect(true).to(beTrue()))
+        XCTAssert(expect(true).to(beTrue()).expectationResult)
     }
     
     func testShouldNotMatchFalse() {
-        XCTAssert(expect(false).toNot(beTrue()))
+        XCTAssert(expect(false).toNot(beTrue()).expectationResult)
     }
     
 }

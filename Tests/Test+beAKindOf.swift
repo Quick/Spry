@@ -20,21 +20,21 @@ final class Test_beAKindOf: XCTestCase {
     }
     
     func testPositiveMatch() {
-        XCTAssert(expect(1).to(beAKindOf(Int.self)))
-        XCTAssert(expect(1).toNot(beAKindOf(String.self)))
-        XCTAssert(expect("turtle string").to(beAKindOf(String.self)))
-        XCTAssert(expect("turtle string").toNot(beAKindOf(TestClassConformingToProtocol.self)))
+        XCTAssert(expect(1).to(beAKindOf(Int.self)).expectationResult)
+        XCTAssert(expect(1).toNot(beAKindOf(String.self)).expectationResult)
+        XCTAssert(expect("turtle string").to(beAKindOf(String.self)).expectationResult)
+        XCTAssert(expect("turtle string").toNot(beAKindOf(TestClassConformingToProtocol.self)).expectationResult)
         
-        XCTAssert(expect(TestEnum.one).to(beAKindOf(TestEnum.self)))
+        XCTAssert(expect(TestEnum.one).to(beAKindOf(TestEnum.self)).expectationResult)
         
         let testProtocolClass = TestClassConformingToProtocol()
-        XCTAssert(expect(testProtocolClass).to(beAKindOf(TestClassConformingToProtocol.self)))
-        XCTAssert(expect(testProtocolClass).to(beAKindOf(TestProtocol.self)))
-        XCTAssert(expect(testProtocolClass).toNot(beAKindOf(TestStructConformingToProtocol.self)))
+        XCTAssert(expect(testProtocolClass).to(beAKindOf(TestClassConformingToProtocol.self)).expectationResult)
+        XCTAssert(expect(testProtocolClass).to(beAKindOf(TestProtocol.self)).expectationResult)
+        XCTAssert(expect(testProtocolClass).toNot(beAKindOf(TestStructConformingToProtocol.self)).expectationResult)
         
         let testProtocolStruct = TestStructConformingToProtocol()
-        XCTAssert(expect(testProtocolStruct).to(beAKindOf(TestStructConformingToProtocol.self)))
-        XCTAssert(expect(testProtocolStruct).to(beAKindOf(TestProtocol.self)))
-        XCTAssert(expect(testProtocolStruct).toNot(beAKindOf(TestClassConformingToProtocol.self)))
+        XCTAssert(expect(testProtocolStruct).to(beAKindOf(TestStructConformingToProtocol.self)).expectationResult)
+        XCTAssert(expect(testProtocolStruct).to(beAKindOf(TestProtocol.self)).expectationResult)
+        XCTAssert(expect(testProtocolStruct).toNot(beAKindOf(TestClassConformingToProtocol.self)).expectationResult)
     }
 }

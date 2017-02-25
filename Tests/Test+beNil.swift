@@ -12,14 +12,14 @@ import XCTest
 final class Test_beNil: XCTestCase {
     
     func testBeNil() {
-        XCTAssert(expect(nil as Int?).to(beNil()))
-        XCTAssert(expect(1 as Int?).toNot(beNil()))
+        XCTAssert(expect(nil as Int?).to(beNil()).expectationResult)
+        XCTAssert(expect(1 as Int?).toNot(beNil()).expectationResult)
     }
     
     func testBeNilWithEqualityOperator() {
-        XCTAssert(expect(nil as Float?).to(beNil()))
-        XCTAssert(expect(nil as Float?) == nil)
-        XCTAssert(expect(20 as Int?) != nil)
+        XCTAssert(expect(nil as Float?).to(beNil()).expectationResult)
+        XCTAssert((expect(nil as Float?) == nil).expectationResult)
+        XCTAssert((expect(20 as Int?) != nil).expectationResult)
     }
     
 }

@@ -96,7 +96,7 @@ private func equalSet<T>(_ expectedValue: Set<T>) -> Matcher<Set<T>> {
 ///
 /// @see beCloseTo if you want to match imprecise types (eg - floats, doubles).
 @discardableResult
-public func ==<T: Equatable>(lhs: Expectation<T>, rhs: T) -> Bool {
+public func ==<T: Equatable>(lhs: Expectation<T>, rhs: T) -> ExpectationResult {
     return lhs.to(equal(rhs))
 }
 
@@ -105,45 +105,45 @@ public func ==<T: Equatable>(lhs: Expectation<T>, rhs: T) -> Bool {
 ///
 /// @see beCloseTo if you want to match imprecise types (eg - floats, doubles).
 @discardableResult
-public func !=<T: Equatable>(lhs: Expectation<T>, rhs: T) -> Bool {
+public func !=<T: Equatable>(lhs: Expectation<T>, rhs: T) -> ExpectationResult {
     return lhs.toNot(equal(rhs))
 }
 
 /// A Nimble matcher that succeeds when the actual collection is equal to the expected collection.
 /// Items must implement the Equatable protocol.
 @discardableResult
-public func ==<T: Equatable>(lhs: Expectation<[T]>, rhs: [T]?) -> Bool {
+public func ==<T: Equatable>(lhs: Expectation<[T]>, rhs: [T]?) -> ExpectationResult {
     return lhs.to(equal(rhs!))
 }
 
 /// A Nimble matcher that succeeds when the actual collection is not equal to the expected collection.
 /// Items must implement the Equatable protocol.
 @discardableResult
-public func !=<T: Equatable>(lhs: Expectation<[T]>, rhs: [T]?) -> Bool {
+public func !=<T: Equatable>(lhs: Expectation<[T]>, rhs: [T]?) -> ExpectationResult {
     return lhs.toNot(equal(rhs!))
 }
 
 /// A Nimble matcher that succeeds when the actual set is equal to the expected set.
 @discardableResult
-public func == <T>(lhs: Expectation<Set<T>>, rhs: Set<T>?) -> Bool {
+public func == <T>(lhs: Expectation<Set<T>>, rhs: Set<T>?) -> ExpectationResult {
     return lhs.to(equal(rhs!))
 }
 
 /// A Nimble matcher that succeeds when the actual set is not equal to the expected set.
 @discardableResult
-public func != <T>(lhs: Expectation<Set<T>>, rhs: Set<T>?) -> Bool {
+public func != <T>(lhs: Expectation<Set<T>>, rhs: Set<T>?) -> ExpectationResult {
     return lhs.toNot(equal(rhs!))
 }
 
 /// A Nimble matcher that succeeds when the actual set is equal to the expected set.
 @discardableResult
-public func ==<T: Comparable>(lhs: Expectation<Set<T>>, rhs: Set<T>?) -> Bool {
+public func ==<T: Comparable>(lhs: Expectation<Set<T>>, rhs: Set<T>?) -> ExpectationResult {
     return lhs.to(equal(rhs!))
 }
 
 /// A Nimble matcher that succeeds when the actual set is not equal to the expected set.
 @discardableResult
-public func !=<T: Comparable>(lhs: Expectation<Set<T>>, rhs: Set<T>?) -> Bool {
+public func !=<T: Comparable>(lhs: Expectation<Set<T>>, rhs: Set<T>?) -> ExpectationResult {
     return lhs.toNot(equal(rhs!))
 }
 
@@ -152,7 +152,7 @@ public func !=<T: Comparable>(lhs: Expectation<Set<T>>, rhs: Set<T>?) -> Bool {
 ///
 /// @see beCloseTo if you want to match imprecise types (eg - floats, doubles).
 @discardableResult
-public func ==<T: Equatable, C: Equatable>(lhs: Expectation<[T: C]>, rhs: [T: C]?) -> Bool {
+public func ==<T: Equatable, C: Equatable>(lhs: Expectation<[T: C]>, rhs: [T: C]?) -> ExpectationResult {
     return lhs.to(equal(rhs!))
 }
 
@@ -161,6 +161,6 @@ public func ==<T: Equatable, C: Equatable>(lhs: Expectation<[T: C]>, rhs: [T: C]
 ///
 /// @see beCloseTo if you want to match imprecise types (eg - floats, doubles).
 @discardableResult
-public func !=<T: Equatable, C: Equatable>(lhs: Expectation<[T: C]>, rhs: [T: C]?) -> Bool {
+public func !=<T: Equatable, C: Equatable>(lhs: Expectation<[T: C]>, rhs: [T: C]?) -> ExpectationResult {
     return lhs.toNot(equal(rhs!))
 }

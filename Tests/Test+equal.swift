@@ -12,41 +12,41 @@ import Spry
 final class Test_equal: XCTestCase {
     
     func testEquality() {
-        XCTAssert(expect(1 as CInt).to(equal(1 as CInt)))
-        XCTAssert(expect(1 as CInt).to(equal(1)))
-        XCTAssert(expect(1).to(equal(1)))
-        XCTAssert(expect("hello").to(equal("hello")))
-        XCTAssert(expect("hello").toNot(equal("world")))
+        XCTAssert(expect(1 as CInt).to(equal(1 as CInt)).expectationResult)
+        XCTAssert(expect(1 as CInt).to(equal(1)).expectationResult)
+        XCTAssert(expect(1).to(equal(1)).expectationResult)
+        XCTAssert(expect("hello").to(equal("hello")).expectationResult)
+        XCTAssert(expect("hello").toNot(equal("world")).expectationResult)
     }
     
     func testArrayEquality() {
-        XCTAssert(expect([1, 2, 3]).to(equal([1, 2, 3])))
-        XCTAssert(expect([1, 2, 3]).toNot(equal([1, 2])))
-        XCTAssert(expect([1, 2, 3]).toNot(equal([1, 2, 4])))
+        XCTAssert(expect([1, 2, 3]).to(equal([1, 2, 3])).expectationResult)
+        XCTAssert(expect([1, 2, 3]).toNot(equal([1, 2])).expectationResult)
+        XCTAssert(expect([1, 2, 3]).toNot(equal([1, 2, 4])).expectationResult)
         
         let array1: Array<Int> = [1, 2, 3]
         let array2: Array<Int> = [1, 2, 3]
-        XCTAssert(expect(array1).to(equal(array2)))
-        XCTAssert(expect(array1).to(equal([1, 2, 3])))
-        XCTAssert(expect(array1).toNot(equal([1, 2] as Array<Int>)))
+        XCTAssert(expect(array1).to(equal(array2)).expectationResult)
+        XCTAssert(expect(array1).to(equal([1, 2, 3])).expectationResult)
+        XCTAssert(expect(array1).toNot(equal([1, 2] as Array<Int>)).expectationResult)
     }
     
     func testSetEquality() {
-        XCTAssert(expect(Set([1, 2])).to(equal(Set([1, 2]))))
-        XCTAssert(expect(Set<Int>()).to(equal(Set<Int>())))
-        XCTAssert((Set<Int>()) == Set<Int>())
-        XCTAssert((Set([1, 2])) != Set<Int>())
+        XCTAssert(expect(Set([1, 2])).to(equal(Set([1, 2]))).expectationResult)
+        XCTAssert(expect(Set<Int>()).to(equal(Set<Int>())).expectationResult)
+        XCTAssert(((Set<Int>()) == Set<Int>()))
+        XCTAssert(((Set([1, 2])) != Set<Int>()))
     }
     
     func testDictionaryEquality() {
-        XCTAssert(expect(["foo": "bar"]).to(equal(["foo": "bar"])))
-        XCTAssert(expect(["foo": "bar"]).toNot(equal(["foo": "baz"])))
+        XCTAssert(expect(["foo": "bar"]).to(equal(["foo": "bar"])).expectationResult)
+        XCTAssert(expect(["foo": "bar"]).toNot(equal(["foo": "baz"])).expectationResult)
         
         let actual = ["foo": "bar"]
         let expected = ["foo": "bar"]
         let unexpected = ["foo": "baz"]
-        XCTAssert(expect(actual).to(equal(expected)))
-        XCTAssert(expect(actual).toNot(equal(unexpected)))
+        XCTAssert(expect(actual).to(equal(expected)).expectationResult)
+        XCTAssert(expect(actual).toNot(equal(unexpected)).expectationResult)
     }
     
     func testDataEquality() {
@@ -54,12 +54,12 @@ final class Test_equal: XCTestCase {
         let expected = "foobar".data(using: .utf8)!
         let unexpected = "foobarfoo".data(using: .utf8)!
         
-        XCTAssert(expect(actual).to(equal(expected)))
-        XCTAssert(expect(actual).toNot(equal(unexpected)))
+        XCTAssert(expect(actual).to(equal(expected)).expectationResult)
+        XCTAssert(expect(actual).toNot(equal(unexpected)).expectationResult)
     }
     
     func testNSObjectEquality() {
-        XCTAssert(expect(NSNumber(value:1)).to(equal(NSNumber(value:1))))
+        XCTAssert(expect(NSNumber(value:1)).to(equal(NSNumber(value:1))).expectationResult)
         XCTAssert((NSNumber(value:1)) == NSNumber(value:1))
         XCTAssert((NSNumber(value:1)) != NSNumber(value:2))
     }
@@ -86,8 +86,8 @@ final class Test_equal: XCTestCase {
     }
     
     func testOptionalEquality() {
-        XCTAssert(expect(1 as CInt?).to(equal(1)))
-        XCTAssert(expect("One" as String?).to(equal("One")))
+        XCTAssert(expect(1 as CInt?).to(equal(1)).expectationResult)
+        XCTAssert(expect("One" as String?).to(equal("One")).expectationResult)
     }
     
     func testArrayOfOptionalsEquality() {
@@ -95,21 +95,21 @@ final class Test_equal: XCTestCase {
         let array2: Array<Int?> = [nil, 2, 3]
         let array3: Array<Int?> = [1, nil, 3]
         
-        XCTAssert(expect(array1).toNot(equal(array2)))
-        XCTAssert(expect(array1).to(equal(array3)))
-        XCTAssert(expect(array2).toNot(equal(array3)))
+        XCTAssert(expect(array1).toNot(equal(array2)).expectationResult)
+        XCTAssert(expect(array1).to(equal(array3)).expectationResult)
+        XCTAssert(expect(array2).toNot(equal(array3)).expectationResult)
         
         let allNils1: Array<String?> = [nil, nil, nil, nil]
         let allNils2: Array<String?> = [nil, nil, nil, nil]
         let notReallyAllNils: Array<String?> = [nil, nil, nil, "turtles"]
         
-        XCTAssert(expect(allNils1).to(equal(allNils2)))
-        XCTAssert(expect(allNils1).toNot(equal(notReallyAllNils)))
+        XCTAssert(expect(allNils1).to(equal(allNils2)).expectationResult)
+        XCTAssert(expect(allNils1).toNot(equal(notReallyAllNils)).expectationResult)
         
         let noNils1: Array<Int?> = [1, 2, 3, 4, 5]
         let noNils2: Array<Int?> = [1, 3, 5, 7, 9]
         
-        XCTAssert(expect(noNils1).toNot(equal(noNils2)))
+        XCTAssert(expect(noNils1).toNot(equal(noNils2)).expectationResult)
     }
     
     func testDictionariesWithDifferentSequences() {
@@ -148,7 +148,7 @@ final class Test_equal: XCTestCase {
                           "for":1, "such":1, "an":1, "interesting":1, "person":1,
                           "might":1, "more":1, "say":1, "but":1, "you":1, "be":1, "wrong.":1]
         
-        XCTAssert(expect(result).to(equal(storyCount)))
+        XCTAssert(expect(result).to(equal(storyCount)).expectationResult)
     }
 
 }

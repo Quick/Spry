@@ -9,11 +9,11 @@ public func beVoid() -> Matcher<()> {
 }
 
 /// A Nimble matcher that succeeds when the actual value is Void.
-public func == (lhs: Expectation<()>, rhs: ()) -> Bool {
+public func == (lhs: Expectation<()>, rhs: ()) -> ExpectationResult {
     return lhs.to(beVoid())
 }
 
 /// A Nimble matcher that succeeds when the actual value is not Void.
-public func != (lhs: Expectation<()>, rhs: ()) -> Bool {
+public func != (lhs: Expectation<()>, rhs: ()) -> ExpectationResult {
     return lhs.toNot(beVoid())
 }

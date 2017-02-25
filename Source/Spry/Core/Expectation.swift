@@ -18,13 +18,13 @@ public struct Expectation<T> {
     }
     
     @discardableResult
-    public func to(_ matcher: Matcher<T>) -> Bool {
-        return evaluate(matcher: matcher)
+    public func to(_ matcher: Matcher<T>) -> ExpectationResult {
+        return evaluate(matcher: matcher).expectationResult
     }
     
     @discardableResult
-    public func toNot(_ matcher: Matcher<T>) -> Bool {
-        return !evaluate(matcher: matcher)
+    public func toNot(_ matcher: Matcher<T>) -> ExpectationResult {
+        return (!evaluate(matcher: matcher)).expectationResult
     }
     
     private func evaluate(matcher: Matcher<T>) -> Bool {

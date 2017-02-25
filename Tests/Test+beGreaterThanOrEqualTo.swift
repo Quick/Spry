@@ -12,19 +12,19 @@ import Spry
 final class Test_beGreaterThanOrEqualTo: XCTestCase {
     
     func testGreaterThanOrEqualTo() {
-        XCTAssert(expect(10).to(beGreaterThanOrEqualTo(10)))
-        XCTAssert(expect(10).to(beGreaterThanOrEqualTo(2)))
-        XCTAssert(expect(1).toNot(beGreaterThanOrEqualTo(2)))
-        XCTAssert(expect(NSNumber(value:1)).toNot(beGreaterThanOrEqualTo(2)))
-        XCTAssert(expect(NSNumber(value:2)).to(beGreaterThanOrEqualTo(NSNumber(value:2))))
-        XCTAssert(expect(1).to(beGreaterThanOrEqualTo(NSNumber(value:0))))
+        XCTAssert(expect(10).to(beGreaterThanOrEqualTo(10)).expectationResult)
+        XCTAssert(expect(10).to(beGreaterThanOrEqualTo(2)).expectationResult)
+        XCTAssert(expect(1).toNot(beGreaterThanOrEqualTo(2)).expectationResult)
+        XCTAssert(expect(NSNumber(value:1)).toNot(beGreaterThanOrEqualTo(2)).expectationResult)
+        XCTAssert(expect(NSNumber(value:2)).to(beGreaterThanOrEqualTo(NSNumber(value:2))).expectationResult)
+        XCTAssert(expect(1).to(beGreaterThanOrEqualTo(NSNumber(value:0))).expectationResult)
     }
     
     func testGreaterThanOrEqualToOperator() {
-        XCTAssert(expect(0) >= 0)
-        XCTAssert(expect(1) >= 0)
-        XCTAssert(expect(NSNumber(value:1)) >= 1)
-        XCTAssert(expect(NSNumber(value:1)) >= NSNumber(value:1))
+        XCTAssert((expect(0) >= 0).expectationResult)
+        XCTAssert((expect(1) >= 0).expectationResult)
+        XCTAssert((expect(NSNumber(value:1)) >= 1).expectationResult)
+        XCTAssert((expect(NSNumber(value:1)) >= NSNumber(value:1)).expectationResult)
     }
     
 }

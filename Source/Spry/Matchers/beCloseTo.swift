@@ -64,7 +64,7 @@ infix operator ≈ : ComparisonPrecedence
 /// point values which can have imprecise results when doing arithmetic on them.
 ///
 /// @see equal
-public func ≈(lhs: Expectation<[Double]>, rhs: [Double]) -> Bool {
+public func ≈(lhs: Expectation<[Double]>, rhs: [Double]) -> ExpectationResult {
     return lhs.to(beCloseTo(rhs))
 }
 
@@ -72,7 +72,7 @@ public func ≈(lhs: Expectation<[Double]>, rhs: [Double]) -> Bool {
 /// point values which can have imprecise results when doing arithmetic on them.
 ///
 /// @see equal
-public func ≈(lhs: Expectation<ConvertibleToDouble>, rhs: ConvertibleToDouble) -> Bool {
+public func ≈(lhs: Expectation<ConvertibleToDouble>, rhs: ConvertibleToDouble) -> ExpectationResult {
     return lhs.to(beCloseTo(rhs))
 }
 
@@ -80,7 +80,7 @@ public func ≈(lhs: Expectation<ConvertibleToDouble>, rhs: ConvertibleToDouble)
 /// point values which can have imprecise results when doing arithmetic on them.
 ///
 /// @see equal
-public func ≈(lhs: Expectation<ConvertibleToDouble>, rhs: (expected: ConvertibleToDouble, delta: Double)) -> Bool {
+public func ≈(lhs: Expectation<ConvertibleToDouble>, rhs: (expected: ConvertibleToDouble, delta: Double)) -> ExpectationResult {
     return lhs.to(beCloseTo(rhs.expected, within: rhs.delta))
 }
 
@@ -88,7 +88,7 @@ public func ≈(lhs: Expectation<ConvertibleToDouble>, rhs: (expected: Convertib
 /// point values which can have imprecise results when doing arithmetic on them.
 ///
 /// @see equal
-public func == (lhs: Expectation<ConvertibleToDouble>, rhs: (expected: ConvertibleToDouble, delta: Double)) -> Bool {
+public func == (lhs: Expectation<ConvertibleToDouble>, rhs: (expected: ConvertibleToDouble, delta: Double)) -> ExpectationResult {
     return lhs.to(beCloseTo(rhs.expected, within: rhs.delta))
 }
 
