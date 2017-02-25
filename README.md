@@ -63,7 +63,7 @@ Spry supports the following features:
 - [x] `equal`  
 - [x] `haveCount`  
 - [x] `match`  
-- [x] `satisfyAnyOf`  
+- [x] `satisfyAnyOf`
 
 - [ ] `toEventually`  
 - [ ] `async`  
