@@ -37,7 +37,6 @@ Spry supports the following features:
 <input type="checkbox" disabled checked>`expect`  
 <input type="checkbox" disabled checked>`to`  
 <input type="checkbox" disabled checked>`toEventually`  
-<input type="checkbox" disabled>`failWithMessage`  
 <input type="checkbox" disabled checked>`beAKindOf`  
 <input type="checkbox" disabled checked>`beAnInstanceOf`  
 <input type="checkbox" disabled checked>`beCloseTo`  
@@ -61,6 +60,7 @@ Spry supports the following features:
 <input type="checkbox" disabled>`async`  
 <input type="checkbox" disabled>`matchError`  
 <input type="checkbox" disabled>`throwError`  
+<input type="checkbox" disabled>`failWithMessage`  
 
 # Usage
 
