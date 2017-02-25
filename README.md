@@ -40,7 +40,7 @@ The following features are **NOT** supported (since they are a part of Quick):
 `context`  
 `it`
 
-Spry supports the following features:
+The following features are already implemented:
 
 - [x] `expect`  
 - [x] `to`  
@@ -64,6 +64,8 @@ Spry supports the following features:
 - [x] `haveCount`  
 - [x] `match`  
 - [x] `satisfyAnyOf`
+
+The following features are not yet implemented:
 
 - [ ] `toEventually`  
 - [ ] `async`  
