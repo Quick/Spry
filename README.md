@@ -1,7 +1,7 @@
-<a href="https://travis-ci.org/shaps80/Spry">![Travis](https://api.travis-ci.org/shaps80/Spry.svg?branch=1.0)</a>
-<a href="https://travis-ci.org/shaps80/Spry">![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macos-lightgrey.svg)</a>
-<a href="https://github.com/shaps80/Spry/raw/master/Playgrounds/Spry-Xcode.zip">![Xcode Playgrounds](https://img.shields.io/badge/playground-xcode-blue.svg)</a>
-<a href="https://github.com/shaps80/Spry/raw/master/Playgrounds/Spry-iPad.zip">![iPad Playgrounds](https://img.shields.io/badge/playground-ipad-blue.svg)</a>
+<a href="https://travis-ci.org/Quick/Spry">![Travis](https://travis-ci.org/Quick/Spry.svg?branch=master)</a>
+<a href="https://travis-ci.org/Quick/Spry">![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macos-lightgrey.svg)</a>
+<a href="https://github.com/Quick/Spry/raw/master/Playgrounds/Spry-Xcode.zip">![Xcode Playgrounds](https://img.shields.io/badge/playground-xcode-blue.svg)</a>
+<a href="https://github.com/Quick/Spry/raw/master/Playgrounds/Spry-iPad.zip">![iPad Playgrounds](https://img.shields.io/badge/playground-ipad-blue.svg)</a>
 <a href="https://github.com/Quick/Quick/blob/master/LICENSE">![License](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg)</a>
 
 # Spry
@@ -10,10 +10,10 @@ Spry is a Swift Playgrounds Unit Testing library based on [Nimble](http://github
 
 <table>
 <tr>
-    <td><img src="https://github.com/shaps80/Spry/raw/master/Screenshots/ipad.jpg"></td>
-    <td><img src="https://github.com/shaps80/Spry/raw/master/Screenshots/glossary.jpg"></td>
+    <td><img src="https://github.com/Quick/Spry/raw/master/Screenshots/ipad.jpg"></td>
+    <td><img src="https://github.com/Quick/Spry/raw/master/Screenshots/glossary.jpg"></td>
     <td>
-    <img src="https://github.com/shaps80/Spry/raw/master/Screenshots/xcode.jpg"></td>
+    <img src="https://github.com/Quick/Spry/raw/master/Screenshots/xcode.jpg"></td>
 </tr>
 </table>
 
@@ -28,8 +28,8 @@ There are a couple of ways you can download Spry.
 ## Template
 You can download a Playground including the latest version of Spry. Consider this a boilerplate template. It includes Spry in the `Sources` folder of the Playground, so you can simply start writing tests alongside your code in the Playground.
 
-<a href="https://github.com/shaps80/Spry/raw/master/Playgrounds/Spry-iPad.zip">![iPad Playgrounds](https://img.shields.io/badge/playground-ipad-blue.svg)</a>  
-<a href="https://github.com/shaps80/Spry/raw/master/Playgrounds/Spry-Xcode.zip">![Xcode Playgrounds](https://img.shields.io/badge/playground-xcode-blue.svg)</a>
+<a href="https://github.com/Quick/Spry/raw/master/Playgrounds/Spry-iPad.zip">![iPad Playgrounds](https://img.shields.io/badge/playground-ipad-blue.svg)</a>  
+<a href="https://github.com/Quick/Spry/raw/master/Playgrounds/Spry-Xcode.zip">![Xcode Playgrounds](https://img.shields.io/badge/playground-xcode-blue.svg)</a>
 
 ## Manual
 You can also download or checkout this repo and simply copy the files into your existing Playground manually. Simply copy the entire `Spry` folder into your Playground's `Sources` folder. Easy Peasy!
