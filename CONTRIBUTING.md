@@ -118,6 +118,6 @@ some "ground rules":
 The process is relatively straight forward, but here's a useful checklist for tagging:
 
 - Look at changes from the previously tagged release and write release notes: `git log v0.4.0...HEAD`
-- The script will prompt you to create a new [GitHub release](https://github.com/Quick/Spry/releases).
+- Create a new [GitHub release](https://github.com/Quick/Spry/releases).
   - Use the same release notes you created for the tag, but tweak up formatting for GitHub.
 - Announce!
