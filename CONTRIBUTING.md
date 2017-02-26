@@ -2,13 +2,16 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Welcome to Spry!](#welcome-to-spry!)
+
+- [Welcome to Spry!](#welcome-to-spry)
   - [Reporting Bugs](#reporting-bugs)
   - [Building the Project](#building-the-project)
+  - [Running the tests](#running-the-tests)
   - [Pull Requests](#pull-requests)
     - [Style Conventions](#style-conventions)
   - [Core Members](#core-members)
     - [Code of Conduct](#code-of-conduct)
+    - [Creating a Release](#creating-a-release)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
