@@ -15,6 +15,6 @@ public func beGreaterThanOrEqualTo<T: Comparable>(_ expectedValue: T?) -> Matche
 /// A Nimble matcher that succeeds when the actual value is greater than
 /// or equal to the expected value.
 @discardableResult
-public func >=<T: Comparable>(lhs: Expectation<T>, rhs: T) -> Color {
+public func >=<T: Comparable>(lhs: Expectation<T>, rhs: T) -> ExpectationResult {
     return lhs.to(beGreaterThanOrEqualTo(rhs))
 }
