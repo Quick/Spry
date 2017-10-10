@@ -17,7 +17,7 @@ extension NSNumber : Comparable {
     ///   - lhs: A value to compare.
     ///   - rhs: Another value to compare.
     public static func <(lhs: NSNumber, rhs: NSNumber) -> Bool {
-        return Double(lhs) < Double(rhs)
+        return Double(truncating: lhs) < Double(truncating: rhs)
     }
     
     /// Returns a Boolean value indicating whether the value of the first
@@ -27,7 +27,7 @@ extension NSNumber : Comparable {
     ///   - lhs: A value to compare.
     ///   - rhs: Another value to compare.
     public static func <=(lhs: NSNumber, rhs: NSNumber) -> Bool {
-        return Double(lhs) <= Double(rhs)
+        return Double(truncating: lhs) <= Double(truncating: rhs)
     }
     
     /// Returns a Boolean value indicating whether the value of the first
@@ -37,7 +37,7 @@ extension NSNumber : Comparable {
     ///   - lhs: A value to compare.
     ///   - rhs: Another value to compare.
     public static func >=(lhs: NSNumber, rhs: NSNumber) -> Bool {
-        return Double(lhs) >= Double(rhs)
+        return Double(truncating: lhs) >= Double(truncating: rhs)
     }
     
     /// Returns a Boolean value indicating whether the value of the first
@@ -47,7 +47,7 @@ extension NSNumber : Comparable {
     ///   - lhs: A value to compare.
     ///   - rhs: Another value to compare.
     public static func >(lhs: NSNumber, rhs: NSNumber) -> Bool {
-        return Double(lhs) > Double(rhs)
+        return Double(truncating: lhs) > Double(truncating: rhs)
     }
     
 }

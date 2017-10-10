@@ -8,7 +8,7 @@
 
 import Foundation
 
-internal let DefaultDelta = 0.0001
+public let DefaultDelta = 0.0001
 
 private func isCloseTo(_ actualValue: ConvertibleToDouble?, expectedValue: ConvertibleToDouble, delta: Double) -> Bool {
     return actualValue != nil && abs(actualValue!.doubleValue - expectedValue.doubleValue) < delta
