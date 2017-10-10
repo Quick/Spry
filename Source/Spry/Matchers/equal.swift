@@ -23,7 +23,7 @@ public func equal<T: Equatable>(_ expectedValue: T) -> Matcher<T> {
 /// Values can support equal by supporting the Equatable protocol.
 ///
 /// @see beCloseTo if you want to match imprecise types (eg - floats, doubles).
-public func equal<T: Equatable, C: Equatable>(_ expectedValue: [T: C]) -> Matcher<[T: C]> {
+public func equal<T, C: Equatable>(_ expectedValue: [T: C]) -> Matcher<[T: C]> {
     return Matcher { expression in
         guard let actualValue = try expression.evaluate() else { return false }
         return expectedValue == actualValue
@@ -152,7 +152,7 @@ public func !=<T: Comparable>(lhs: Expectation<Set<T>>, rhs: Set<T>?) -> Expecta
 ///
 /// @see beCloseTo if you want to match imprecise types (eg - floats, doubles).
 @discardableResult
-public func ==<T: Equatable, C: Equatable>(lhs: Expectation<[T: C]>, rhs: [T: C]?) -> ExpectationResult {
+public func ==<T, C: Equatable>(lhs: Expectation<[T: C]>, rhs: [T: C]?) -> ExpectationResult {
     return lhs.to(equal(rhs!))
 }
 
@@ -161,6 +161,6 @@ public func ==<T: Equatable, C: Equatable>(lhs: Expectation<[T: C]>, rhs: [T: C]
 ///
 /// @see beCloseTo if you want to match imprecise types (eg - floats, doubles).
 @discardableResult
-public func !=<T: Equatable, C: Equatable>(lhs: Expectation<[T: C]>, rhs: [T: C]?) -> ExpectationResult {
+public func !=<T, C: Equatable>(lhs: Expectation<[T: C]>, rhs: [T: C]?) -> ExpectationResult {
     return lhs.toNot(equal(rhs!))
 }
